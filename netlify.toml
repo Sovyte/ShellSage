@@ -1,0 +1,42 @@
+[build]
+  functions = "functions"
+
+[[redirects]]
+  from = "/api/command"
+  to   = "/.netlify/functions/command"
+  status = 200
+
+[[redirects]]
+  from = "/api/explain"
+  to   = "/.netlify/functions/explain"
+  status = 200
+
+[[redirects]]
+  from = "/api/fix"
+  to   = "/.netlify/functions/fix"
+  status = 200
+
+[[redirects]]
+  from = "/api/refine"
+  to   = "/.netlify/functions/refine"
+  status = 200
+
+[[redirects]]
+  from = "/api/history"
+  to   = "/.netlify/functions/history"
+  status = 200
+
+[functions.command]
+  runtime = "python3.9"
+
+[functions.explain]
+  runtime = "python3.9"
+
+[functions.fix]
+  runtime = "python3.9"
+
+[functions.refine]
+  runtime = "python3.9"
+
+[functions.history]
+  runtime = "python3.9"
